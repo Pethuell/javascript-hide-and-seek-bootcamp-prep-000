@@ -17,6 +17,7 @@ function increaseRankBy(n) {
     currentAmount = currentAmount + n;
     lis[i].innerText = currentAmount;
   }
+  return lis;
 }
 
 function deepestChild() {
