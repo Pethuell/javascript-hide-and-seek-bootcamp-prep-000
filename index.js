@@ -10,14 +10,10 @@ function nestedTarget() {
 
 function increaseRankBy(n) {
   const lis = document.querySelectorAll('ul.ranked-list li');
-  var currentAmount;
   
   for(var i = 0; i < lis.length; i++){
-    currentAmount = parseInt(lis[i].innerText);
-    currentAmount = currentAmount + n;
-    lis[i].innerText = currentAmount.toString();
+    lis[i].innerHTML = (parseInt(lis[i].innerHTML) + n).toString();
   }
-  return lis;
 }
 
 function deepestChild() {
