@@ -18,7 +18,9 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   var deepest = document.querySelector();
-  do 
+  do {
+    deepest = deepest.querySelector('*');
+  } while (deepest.querySelector('*') !== null)
   
-  
+  return deepest;
 }
