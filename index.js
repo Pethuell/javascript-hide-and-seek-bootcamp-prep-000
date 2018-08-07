@@ -14,7 +14,7 @@ function increaseRankBy(n) {
   
   for(var i = 0; i < lis.length; i++){
     currentAmount = parseInt(lis[i].innerText);
-    currentAmount = currentAmount + n;
+    currentAmount = currentAmount + 3;
     lis[i].innerText = currentAmount;
   }
   return lis;
